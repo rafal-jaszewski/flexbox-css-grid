@@ -16,11 +16,12 @@ body{
 .flex-container{
     display: flex;
     background: #fff;
+    flex-wrap: wrap;
 }
 
 .box{
     height: 100px;
-    min-width: 100px;
+    flex: 1 0 200px;
 }
 
 .one{
