@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flexbox</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
 
@@ -23,6 +26,61 @@
                 <li><a href="" class="tw">Twitter</a></li>
             </ul>
         </nav>
+
+        <div style="margin: 20px;">
+            <span>Layout: </span>
+            <a href="#" class="stack">Stack</a>
+            <a href="#" class="grid">Grid</a>
+        </div>
+
+        <section id="blocks">
+            <article>
+                <h2>I pity the fool</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos iusto molestiae explicabo ex
+                        accusamus, libero ab earum. Alias dolores, laborum hic cupiditate doloribus odit illum commodi
+                        omnis quisquam voluptatibus officia!</p>
+            </article>
+            <article>
+                <h2>Second article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem
+                        reprehenderit nam autem qui quis cumque omnis enim, maxime perferendis veritatis similique quasi
+                        tempore repellendus? Non tempora corporis quis et.</p>    
+            </article>
+            <article>
+                <h2>Third article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem
+                        reprehenderit nam autem qui quis cumque omnis enim, maxime perferendis veritatis similique quasi
+                        tempore repellendus? Non tempora corporis quis et.</p>    
+            </article>
+            <article>
+                <h2>Fourth article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem
+                        reprehenderit nam autem qui quis cumque omnis enim, maxime perferendis veritatis similique quasi
+                        tempore repellendus? Non tempora corporis quis et.</p>    
+            </article>
+            <article>
+                <h2>Fifth article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem
+                        reprehenderit nam autem qui quis cumque omnis enim, maxime perferendis veritatis similique quasi
+                        tempore repellendus? Non tempora corporis quis et.</p>    
+            </article>
+            <article>
+                <h2>Sixth article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem
+                        reprehenderit nam autem qui quis cumque omnis enim, maxime perferendis veritatis similique quasi
+                        tempore repellendus? Non tempora corporis quis et.</p>    
+            </article>
+        </section>
+
     </div>
+    <script>
+        $("a.stack").on("click", function(){
+            $("article").addClass("stack");            
+        });
+        $("a.grid").on("click", function(){
+            $("article").removeClass("stack");            
+        });
+    </script>
 </body>
+
 </html>
